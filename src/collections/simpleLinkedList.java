@@ -8,6 +8,8 @@ public class simpleLinkedList {
         list.add(5);
         list.add(2);
         list.add(10);
+        list.add(2,4);
+        System.out.println("The list is after inserting the value  : "+list);
         list.addFirst(9);
         list.addLast(0);
         System.out.println("The list is : "+list);
@@ -17,6 +19,7 @@ public class simpleLinkedList {
         System.out.println(list.removeLast());
         System.out.println("Peek method : " + list.peek());
         System.out.println("Poll method : " + list.poll());
+        System.out.println("By offer method (Adding other name offer method) : " + list.offerFirst(20));
         System.out.println("After All methods the values are : " +list);
         try {
             System.out.println("Getting the First value of index : "+list.get(1));

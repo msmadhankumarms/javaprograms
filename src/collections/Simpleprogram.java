@@ -21,6 +21,8 @@ public class Simpleprogram {
         System.out.println("Arranging of elements : "+list);
         Collections.reverse(list);
         System.out.println("Reverse of Elements : "+list);
+        System.out.println("Sorted List is : "+list);
+        System.out.println("Element found at : "+Collections.binarySearch(list,4));
     }
 }
 
