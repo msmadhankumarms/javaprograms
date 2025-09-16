@@ -27,9 +27,10 @@ class A{
 class B{
     public static void builtin(){
         Scanner s= new Scanner(System.in);
+        System.out.println("Enter Your name");
         String str=s.nextLine();
         StringBuilder sc=new StringBuilder(str);
         sc.reverse();
-        System.out.println(sc);
+        System.out.println("Reverse of a name is : "+sc);
     }
 }
