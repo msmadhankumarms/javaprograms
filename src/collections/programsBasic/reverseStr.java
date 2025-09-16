@@ -3,6 +3,14 @@ import java.util.Scanner;
 
 public class reverseStr {
     public static void main(String[] args) {
+       A.forrev();
+       B.builtin();
+
+    }
+}
+
+class A{
+    static void forrev(){
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter Your Name");
         String S1=sc.nextLine();
@@ -13,5 +21,15 @@ public class reverseStr {
             revstr=ch+revstr;
         }
         System.out.println("Reverse of a string is : "+revstr);
+    }
+}
+
+class B{
+    public static void builtin(){
+        Scanner s= new Scanner(System.in);
+        String str=s.nextLine();
+        StringBuilder sc=new StringBuilder(str);
+        sc.reverse();
+        System.out.println(sc);
     }
 }
