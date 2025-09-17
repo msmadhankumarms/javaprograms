@@ -3,7 +3,8 @@ import java.util.Scanner;
 
 public class reverseStr {
     public static void main(String[] args) {
-       A.forrev();
+     //We are not creating the object because the methods are static
+//       A.forrev();
        B.builtin();
 
     }
@@ -32,5 +33,9 @@ class B{
         StringBuilder sc=new StringBuilder(str);
         sc.reverse();
         System.out.println("Reverse of a name is : "+sc);
+        for(int i=4; i<str.length();i++){
+            System.out.println(str.charAt(i));
+        }
+
     }
 }

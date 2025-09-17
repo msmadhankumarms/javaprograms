@@ -24,14 +24,13 @@ public class QueueExample {
         dq.addFirst("I'am");
         dq.addLast("For Banglore");
         System.out.println("Dequeue Example done"+dq);
-        //
+        //add(), offer(), remove(), peek(), poll(),
         PriorityQueue<Integer> sp=new PriorityQueue<>(Comparator.naturalOrder());
        sp.add(2);
        sp.offer(20);
        sp.offer(10);
-       sp.remove(1);
        sp.offer(5);
-        System.out.println(sp.peek());
+        System.out.println("to"+sp.element());
         System.out.println("Different methods we are trying"+sp);
 
         PriorityQueue<Integer> ms=new PriorityQueue<>(Comparator.reverseOrder());
